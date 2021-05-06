@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+      <title> Photo Gallery </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   </head>
+
+        <style>
+
+* {
+  box-sizing: border-box;
+}
+body {
+background-image:url("w.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: 100% 100%;
+}
+
+nav {
+  float: left;
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+h1{
+color:rgb(53, 53, 53);
+text-align: center;
+font-size: 70px;
+}
+
+span.bag{
+color:red;
+text-align: center;
+}     
+
+div#line{
+background-color:rgb(196, 36, 36);
+height:10px;
+width:100%;
+}
+
+img {
+width: 20%;
+padding: 10px;
+margin: 0 auto;
+height: 370px;
+display:block;
+margin-left: 40%;
+}
+
+.one {
+  float: none;
+  width: auto;
+  padding: 15px;
+  clear:both;
+  margin: .5in;
+  font-size: 180%;
+  border: 3px solid black;
+  background-color: rgba(211, 211, 211, 0.795);
+  font-family:'Tahoma';
+}
+
+
+.bot {
+background-color: rgba(255, 255, 255, 0.445);
+width:100%;
+text-align: center;
+margin-top: 2in;
+font-family:'Arial Narrow Bold';
+}
+
+h2 {
+  font-size: 250%;
+  font-family:'Lucida Bright';
+  text-align: center;
+}
+
+.two{
+  float: none;
+  width: auto;
+  padding: 15px;
+  clear:both;
+  margin: 20px;
+  background-color: rgba(255, 20, 20, 0.301);
+  text-align: center;
+}
+
+.right {
+  background-color: black;
+  width: 25%;
+  padding: 5px;
+  margin: 0 auto;
+  height: 300px;
+  display:block;
+  margin-left: 37.5%;
+  margin-bottom: 1.5in;
+}
+
+.right1 {
+  background-color: black;
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin: 7px;
+  height: 300px;
+  margin-left: 25%;
+  margin-right: -20%;
+  margin-bottom: 2in;
+}
+
+.right2 {
+  background-color: black;
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin: 7px;
+  height: 300px;
+  margin-left: 10%;
+  margin-right: -8%;
+  margin-bottom: 2in;
+}
+
+.right3 {
+  background-color: black;
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin: 7px;
+  height: 300px;
+  margin-left: 25%;
+  margin-right: -20%;
+}
+
+.right4 {
+  background-color: black;
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin: 7px;
+  height: 300px;
+  margin-left: 25%;
+  margin-right: -10%;
+}
+
+.right5 {
+  background-color: black;
+  float: left;
+  width: 25%;
+  padding: 5px;
+  margin: 7px;
+  height: 300px;
+  margin-left: 15%;
+  margin-right: -20%;
+}
+
+ @media only screen and (max-width:2500px) {
+  /* For desktop: */
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .bag {
+    width: 100%;
+  }
+
+  .des {
+    width: 100%;
+  }
+
+  #line {
+    width: 100%;
+  }
+
+  img {
+    width: 20%;
+  }
+
+  .one {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: .1in;
+  }
+  
+  .bot {
+    width: 100%;
+  }
+
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+
+  .two{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .05in;
+  text-align: center;
+}
+
+.right {
+  width: 25%;
+}
+
+.right1 {
+  width: 25%;
+}
+
+.right2 {
+  width: 25%;
+}
+
+.right3 {
+  width: 25%;
+}
+
+.right4 {
+  width: 25%;
+  margin-left: 25%;
+  margin-right: 10%;
+}
+
+.right5 {
+  width: 25%;
+  margin-left: -5%;
+  margin-right: -50%;
+}
+
+  @media only screen and (max-width:1000px) {
+  /* For tablets: */
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .bag {
+    width: 100%;
+  }
+
+  .des {
+    width: 100%;
+  }
+
+  #line {
+    width: 100%;
+  }
+
+  img {
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto;
+    height: 370px;
+    display:block;
+    margin-left: 30%;
+  }
+   
+  .one {
+    width: 80%;
+  }
+
+  .bot {
+    width: 100%;
+  }
+
+  h2{
+    font-size: 200%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .two{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .05in;
+  text-align: center;
+}
+
+.right {
+  width: 20%;
+}
+
+.right1 {
+  width: 20%;
+}
+
+.right2 {
+  width: 20%;
+}
+
+.right3 {
+  width: 20%;
+}
+
+.right4 {
+  width: 20%;
+}
+
+.right5 {
+  width: 20%;
+}
+
+  @media only screen and (max-width:300px) {
+  /* For phones: */
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .bag {
+    width: 100%;
+  }
+
+  .des {
+    width: 100%;
+  }
+
+  #line {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    height: 370px;
+    display:block;
+    margin-left: 2%;
+  }
+
+  .one {
+    width: 30%;
+  }
+
+  .bot {
+    width: 100%;
+  }
+
+    h2{
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .two{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .05in;
+  text-align: center;
+}
+
+.right {
+  width: 100%;
+}
+
+.right1 {
+  width: 100%;
+}
+
+.right2 {
+  width: 100%;
+}
+
+.right3 {
+  width: 100%;
+}
+
+.right4 {
+  width: 100%;
+}
+
+.right5 {
+  width: 100%;
+  margin-left: 25%;
+  margin-right: -30%;
+}
+
+  }
+}
+}
+</style>
+
+    <body>
+      <h1> 
+        <span> UNIVERSITY &ensp; OF </span> &ensp; <span class="bag">BAG</span>U<span class="bag">IO</span> 
+        <br>
+        HIGH&ensp;SCHOOL 
+     </h1>
+
+       <div id=line> </div>
+       <br>
+
+ 
+
+    <nav>
+        <a href="index.html">Home &ensp;&ensp;&ensp;&ensp;&ensp;</a>
+        <a href="about.html">About Us &ensp;&ensp;&ensp;&ensp;&ensp;</a> 
+        <a href="vmo.html">VMO &ensp;&ensp;&ensp;&ensp;&ensp;</a>
+        <a href="course.html">Courses &ensp;&ensp;&ensp;&ensp;&ensp;</a>
+        <a href="gal.html">Gallery &ensp;&ensp;&ensp;&ensp;&ensp;</a>
+      </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+ 
+   <img src="logo1.png" >
+
+
+
+<section class="one">
+    <center><b>Check out some High School Activites! </b><br></center> 
+</section>
+
+
+<br>
+<br>
+
+<section class="two">
+      <h2><center>P R O M E N A D E </center> </h2>
+    </section>
+<h3><center> It helds during the month of March when the school year is almost going to end. <br>
+             The is event is only for higher years especially for Grades 9 and 10.</center></h3>
+  <img class="right" src="prom.jpg">
+
+
+ 
+  <section class="two">
+    <h2><center>C A M P I N G</center> </h2>
+  </section>
+  <h3><center> They give students two types of camping. One is a Survival Camping and the other one is Jamboree <br>
+               The Survival Camping is open for all levels and the Jamboree is for the scouts of the campus.</center></h3>
+  <img class="right" src="ping.jpg">
+
+
+ 
+  <section class="two">
+    <h2><center>S C O U T I N G</center> </h2>
+  </section>
+  <h3><center> It is for the students who belongs under the scouting SPAS. <br>
+               It is also an extra curricular for the students.</center></h3>
+  <img class="right" src="sco.jpg">
+
+
+
+  <section class="two">
+    <h2><center>C A N T A T A</center> </h2>
+  </section>
+  <h3><center> It helds during the month of December. It is a traditional culture for the School to celebrate Chirstmas. <br>
+              This is for all the Christian Students in School. An event that is a choir set up with a play <br>
+                that talks about Jesus Christ and Mary that needs to give birth.  </center></h3>
+  <img class="right1" src="can.jpg">
+
+  <img class="right1" src="can2.jpg">
+
+
+
+  <section class="two">
+    <h2><center>M R. &ensp; A N D &ensp; M S.</center> </h2>
+  </section>
+  <h3><center> It is a event for the young gentleman and ladies who want to join such event. All students from Grades 7 to 10 can join.<br>
+               It is consider a big event for High School students because all classes will watch for the coronation day.</center></h3>
+  <img class="right2" src="mm.jpg">
+
+  <img class="right2" src="mm2.jpg">
+
+  <img class="right2" src="mm3.jpg">
+
+
+  <section class="two">
+    <h2><center>I N T R A M U R A L S</center> </h2>
+  </section>
+  <h3><center> It is for the students to enjoy a fun learning environment and it has a sportsfest where <br>
+               they can develop more their skills in a competion based with their co-students<br>
+               It is also an extra curricular for the students.</center></h3>
+  <img class="right3" src="int.jpg">
+
+  <img class="right3" src="int1.jpg">
+
+  <img class="right4" src="int2.jpg">
+
+  <img class="right5" src="int3.jpg">
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<footer class="bot">
+    <b>
+    <p id="name1"></p>
+    <p id="name2"></p>
+    <p id="name3"></p>
+    <p id="name4"></p>
+   </b>
+</footer>
+
+<script>
+       document.getElementById("name1").innerHTML = "Genearal Luna Road, Baguio City";
+       document.getElementById("name2").innerHTML = "+6374-423-0259";
+       document.getElementById("name3").innerHTML = "(074) 442-4915";
+       document.getElementById("name4").innerHTML = "registrar@e.ubaguio.edu";
+</script>
+
+    </body>
+
+</html>
